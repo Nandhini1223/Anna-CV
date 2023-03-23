@@ -1,0 +1,75 @@
+Selenium Syntax
+--------------------
+
+
+
+
+
+XPath :-
+
+//tagname[@attributename='attribute value'] -----ID,name,class
+
+//tagname[text()='complete txt']  - - - - -text (linked txt)
+
+//tagname[contains(text(),'complete txt'] - - - - -partial linked txt
+
+
+
+Actions:-
+
+Actions refname=new Actions(driver);  - - - -Object
+
+refname.moveToElement(webelement refname).perform();   - - - - MoveToElement
+
+
+refname.dragAndDrop(source,destination).perform();    - - - - DragAndDrop
+
+
+Robots:
+
+Robot refname=new Robot();
+
+
+JavascriptExecutor:
+
+WebDriver ----Parent Interface
+JavaScriptExecutor ----Child Interface
+
+ NewDataType refname =(NewDataType) Webdriver ref;   -----Objectation
+
+ScrollDown:-
+
+new ref.excutescript("arguments[0].scrollIntoView(True)",WebDriver ref);    ----Syntax
+
+
+
+Scroll Up:-
+
+new ref.executescript("argument[0].scrollIntoView(False)",webdriver ref);    -----Syntax
+
+
+
+Replacing Sendkeys:-
+
+new ref.executeScript("arguments[0].setAttribute('value','user text')",webdriver ref); -----Syntax
+
+Replacing Click:-
+
+new ref.executeScript("arguments[0].click()",webdriver ref);   ------Syntax
+
+
+getAttribute:-
+
+
+Object o = new ref.executeScript("return arguments[0].getAttribute('value')",user,pass);   -----Syntax
+
+String s=(String) o;
+System.out.println(s);
+
+
+
+
+
+
+
+
